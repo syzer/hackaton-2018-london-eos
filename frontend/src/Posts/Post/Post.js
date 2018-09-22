@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
+import fuckMeThisGuyIsSexy from './defaultImage'
 
 import EditPost from '../EditPost/EditPost'
 
@@ -37,6 +38,7 @@ class Post extends Component {
             <div className='heart' onClick={() => {this.likePost(this.props.post)}}></div>
             <h2 className="margin-top-0">{this.props.post.title}</h2>
             <p>{this.props.post.content}</p>
+            <img height={200} src={`data:image/png;base64,${this.props.post.image || fuckMeThisGuyIsSexy}`} alt='sexy-ppl'/>
           </div>
           <div className='padding-30 card-footer grid-3'>
             <div className='detailAvatar'>{this.props.post.author}</div>

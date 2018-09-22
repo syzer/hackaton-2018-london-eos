@@ -2,14 +2,23 @@
 
 # Shit TODO:
 - [ ] Adding biometric
-    - [ ] Face => hash
+    - [ ] Face => faceVector
+        - [ ] make dick-pic button
+        - [ ] add faceVector to contract
         - shall me make API ?
-    - [ ] fidnFaceByHash
+    - [ ] findFaceByVector
         - shall we meke API ?
+    - [ ] show updated list off ppl in our app
         
 - [ ] Payment
-    - [ ] notifications
-    
+    - [ ] notification
+        - socket
+        - pusher
+        - popup
+        - [ ] confirmation dialog
+    - [ ] after confirmation payment is shown as confirmed
+    payment added to block (the VISA part)
+    - [ ] list of payments
  
 # Overview
 This Blog DApp demonstrates the eosio platform running a blockchain as a local single node test net with a simple DApp. This DApp allows users to create, edit, delete and like blog posts. This guide uses scripts, containing relevant commands, which will show you how to install, build and run the DApp, and by doing so will demonstrate:

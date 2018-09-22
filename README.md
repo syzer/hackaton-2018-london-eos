@@ -1,5 +1,16 @@
-# EOSIO Demux Example
+# EOS PAY
 
+# Shit TODO:
+- [ ] Adding biometric
+    - [ ] Face => hash
+        - shall me make API ?
+    - [ ] fidnFaceByHash
+        - shall we meke API ?
+        
+- [ ] Payment
+    - [ ] notifications
+    
+ 
 # Overview
 This Blog DApp demonstrates the eosio platform running a blockchain as a local single node test net with a simple DApp. This DApp allows users to create, edit, delete and like blog posts. This guide uses scripts, containing relevant commands, which will show you how to install, build and run the DApp, and by doing so will demonstrate:
 

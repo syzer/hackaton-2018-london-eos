@@ -129,7 +129,7 @@ class App extends Component {
   render () {
     return (
       <div className={`layoutStandard ${this.state.createOpen ? 'createOpen' : ''}`}>
-        <div className='logo'>People I find sexy:</div>
+        <div className='logo'>People I find sexy™:</div>
         <div className='main'>
           <div className='toggleCreate' onClick={this.toggleCreate} />
           <CreatePost createPost={this.createPost} />

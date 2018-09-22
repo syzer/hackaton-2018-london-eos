@@ -19,6 +19,7 @@
     - [ ] after confirmation payment is shown as confirmed
     payment added to block (the VISA part)
     - [ ] list of payments
+    - [ ] EOS PAY LOGO :D
  
 # Overview
 This Blog DApp demonstrates the eosio platform running a blockchain as a local single node test net with a simple DApp. This DApp allows users to create, edit, delete and like blog posts. This guide uses scripts, containing relevant commands, which will show you how to install, build and run the DApp, and by doing so will demonstrate:

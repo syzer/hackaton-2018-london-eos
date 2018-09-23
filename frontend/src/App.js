@@ -10,11 +10,11 @@ import Posts from './Posts/Posts'
 class App extends Component {
   state = {
     createOpen: false,
-    posts: []
+    posts: [],
   }
 
   // Instantiate shared eosjs helper and socket io helper
-  constructor (props) {
+  constructor(props) {
     super(props)
     const contractAccount = process.env.REACT_APP_EOSIO_CONTRACT_ACCOUNT
     this.eosio = new EOSIOClient(contractAccount)
@@ -22,7 +22,7 @@ class App extends Component {
   }
 
   // Enable Realtime updates via Socket.io
-  async componentDidMount () {
+  async componentDidMount() {
     this.loadPosts()
     this.io.onMessage('createpost', (post) => {
       this.setState((prevState) => ({ posts: updatePostsForCreateAndEdit(prevState, post) }))
@@ -126,7 +126,7 @@ class App extends Component {
     }))
   }
 
-  render () {
+  render() {
     return (
       <div className={`layoutStandard ${this.state.createOpen ? 'createOpen' : ''}`}>
         <div className='logo'>People I find sexy™:</div>
@@ -147,6 +147,7 @@ class App extends Component {
     )
   }
 }
+
 App.displayName = 'App' // Tell React Dev Tools the component name
 
 export default App

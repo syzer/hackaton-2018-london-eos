@@ -6,7 +6,7 @@ class CreatePost extends Component {
     title: '',
     content: '',
     tag: '',
-    faceIdScanner: 'https://c29d6247.eu.ngrok.io/', // BIT retarded here that is in the state...
+    faceIdScanner: 'https://da4ac884.eu.ngrok.io/', // BIT retarded here that is in the state...
     sending: '',
 }
 
@@ -26,6 +26,7 @@ class CreatePost extends Component {
 
   handleUploadFaceId = e => {
     e.preventDefault()
+    console.warn(this.state)
     this.setState({ sending: true })
 
     return fetch(this.state.faceIdScanner, {
@@ -75,10 +76,10 @@ class CreatePost extends Component {
         <div className='card-item padding-30'>
           <input
             className='margin-bottom-15'
-            name='title'
-            value={this.state.title}
+            name='tag'
+            value={this.state.tag}
             onChange={this.handleOnChange}
-            placeholder='Title'
+            placeholder='Name Surname'
           />
           <textarea
             className='margin-bottom-15'
@@ -90,16 +91,16 @@ class CreatePost extends Component {
           />
           <input
             className='margin-bottom-15'
-            name='tag'
-            value={this.state.tag}
+            name='title'
+            value={this.state.title}
             onChange={this.handleOnChange}
-            placeholder='Tag'
+            placeholder='Face ID Print'
           />
           <button
             onClick={this.createPost}
             type='submit'
             className='margin-right-15'
-          >Create Post</button>
+          >Create Face Id card</button>
         </div>
       </div>
     )

@@ -201,7 +201,7 @@ button, .btn, submit {
     transform: rotate(90deg); }
 
 .layoutStandard.createOpen .createContainer {
-  max-height: 471px;
+  max-height: 531px;
   overflow: visible; }
 
 .layoutStandard.createOpen .toggleCreate:after {

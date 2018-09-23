@@ -203,8 +203,6 @@ button, .btn, submit {
 .layoutStandard.createOpen .createContainer {
   max-height: 471px;
   overflow: visible; }
-  .layoutStandard.createOpen .createContainer .card-item {
-    padding: 55px 30px; }
 
 .layoutStandard.createOpen .toggleCreate:after {
   opacity: 0; }

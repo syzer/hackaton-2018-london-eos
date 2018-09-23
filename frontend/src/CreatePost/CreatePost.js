@@ -51,11 +51,10 @@ class CreatePost extends Component {
                 <span><i className="material-icons right">add</i> a Face Id </span>
                 <input type="file" name="file" multiple accept="image/*"/>
               </div>
-              <div className="file-path-wrapper">
+              <div className="file-path-wrapper" style={{display: 'none'}}>
                 <input className="file-path validate" type="text" placeholder="Upload one or more faces"/>
               </div>
             </div>
-            <br/>
             <div className="input-field">
               <button
                 className="btn waves-effect waves-light"
@@ -87,7 +86,7 @@ class CreatePost extends Component {
             value={this.state.content}
             onChange={this.handleOnChange}
             rows={4}
-            placeholder='Content'
+            placeholder='Phone number'
           />
           <input
             className='margin-bottom-15'
